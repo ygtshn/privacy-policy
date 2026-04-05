@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fainant - Privacy Policy</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #1a1a1a; background: #f9fafb; padding: 2rem 1rem; }
+    .container { max-width: 720px; margin: 0 auto; background: #fff; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+    h1 { font-size: 1.75rem; margin-bottom: 0.25rem; color: #0d3b2e; }
+    .subtitle { color: #6b7280; font-size: 0.9rem; margin-bottom: 2rem; }
+    h2 { font-size: 1.15rem; margin-top: 1.75rem; margin-bottom: 0.5rem; color: #0d3b2e; }
+    p, li { font-size: 0.95rem; color: #374151; }
+    ul { padding-left: 1.25rem; margin-bottom: 0.75rem; }
+    li { margin-bottom: 0.35rem; }
+    .footer { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid #e5e7eb; font-size: 0.85rem; color: #9ca3af; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Fainant - AI-Powered Personal Finance App &middot; Effective: April 5, 2026</p>
+
+    <h2>1. Overview</h2>
+    <p>Fainant ("we", "the app") is a personal finance tracker that uses AI to parse natural-language transaction inputs. We are committed to protecting your privacy and being transparent about the data we handle.</p>
+
+    <h2>2. Data We Collect</h2>
+    <ul>
+      <li><strong>Account information:</strong> Email address used for authentication via Supabase Auth (email/password or Google sign-in).</li>
+      <li><strong>Transaction data:</strong> Text you enter or that is captured from banking notifications, along with parsed amounts, categories, merchants, and dates.</li>
+      <li><strong>Device notifications:</strong> If you enable notification access, the app reads notifications from banking apps you select. Only notifications from selected apps are processed.</li>
+      <li><strong>Anonymous telemetry:</strong> App usage events (screen views, feature usage, error rates) to improve the experience. No personally identifiable information is included in telemetry.</li>
+    </ul>
+
+    <h2>3. How We Use Your Data</h2>
+    <ul>
+      <li>To parse and categorize your financial transactions using AI (Google Gemini).</li>
+      <li>To store and display your transaction history.</li>
+      <li>To improve parsing accuracy through anonymized correction logs.</li>
+      <li>To maintain and improve app reliability through anonymous telemetry.</li>
+    </ul>
+
+    <h2>4. Third-Party Services</h2>
+    <p>We use the following third-party services:</p>
+    <ul>
+      <li><strong>Supabase:</strong> Authentication and database hosting (EU/US regions).</li>
+      <li><strong>Google Gemini:</strong> AI-powered transaction parsing. Your transaction text is sent to Google's API for processing. Google's privacy policy applies.</li>
+      <li><strong>Upstash:</strong> Caching layer (Redis). Cached data includes parsed transaction results (no user identifiers).</li>
+      <li><strong>Render:</strong> API server hosting (Frankfurt, Germany).</li>
+    </ul>
+
+    <h2>5. Notification Access</h2>
+    <p>If you grant notification access, the app reads notifications <strong>only</strong> from banking apps you explicitly select. Notifications are processed locally on your device and sent to our API for AI parsing. We do not read, store, or process notifications from any other apps.</p>
+
+    <h2>6. Data Storage & Security</h2>
+    <ul>
+      <li>Your data is stored in Supabase with Row Level Security (RLS) enabled — each user can only access their own data.</li>
+      <li>All communication uses HTTPS encryption.</li>
+      <li>We do not sell, share, or rent your personal data to third parties.</li>
+    </ul>
+
+    <h2>7. Data Retention & Deletion</h2>
+    <p>Your transaction data is retained as long as your account exists. You can delete individual transactions within the app at any time. To delete your entire account and all associated data, contact us at the email below.</p>
+
+    <h2>8. Children's Privacy</h2>
+    <p>Fainant is not intended for children under 13. We do not knowingly collect data from children.</p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this policy from time to time. Changes will be posted on this page with an updated effective date.</p>
+
+    <h2>10. Contact</h2>
+    <p>If you have questions about this privacy policy or your data, contact us at:<br>
+    <strong>ygtshn61@gmail.com</strong></p>
+
+    <div class="footer">
+      <p>&copy; 2026 Fainant. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
