@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peere - Privacy Policy</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23FF9F0A'/></svg>">
+  <style>
+    :root {
+      --bg: #09090b;
+      --card-bg: #141418;
+      --text-main: #f4f4f5;
+      --text-muted: #a1a1aa;
+      --accent: #FF9F0A;
+      --border: #27272a;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.75;
+      color: var(--text-main);
+      background: var(--bg);
+      padding: 2.5rem 1rem;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 3rem 2.5rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+    .header-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      background: rgba(255, 159, 10, 0.12);
+      border: 1px solid rgba(255, 159, 10, 0.3);
+      border-radius: 999px;
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+    h1 {
+      font-size: 2.1rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 2.25rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    p, li {
+      font-size: 0.98rem;
+      color: #d4d4d8;
+      margin-bottom: 0.85rem;
+    }
+    ul {
+      padding-left: 1.4rem;
+      margin-bottom: 1rem;
+    }
+    li {
+      margin-bottom: 0.45rem;
+    }
+    strong {
+      color: #ffffff;
+    }
+    .highlight-box {
+      background: rgba(255, 159, 10, 0.06);
+      border-left: 4px solid var(--accent);
+      padding: 1rem 1.25rem;
+      border-radius: 6px;
+      margin: 1.5rem 0;
+    }
+    .highlight-box p {
+      margin-bottom: 0;
+      color: #fef08a;
+      font-weight: 500;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      font-size: 0.9rem;
+    }
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="nav-links">
+      <a href="/">← Back to Peere</a>
+      <span>•</span>
+      <a href="/terms">Terms of Service</a>
+    </div>
+
+    <div class="header-pill">Privacy First Architecture</div>
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Peere: Anti-Hoarding Media Buffer &middot; Effective Date: November 4, 2026</p>
+
+    <div class="highlight-box">
+      <p>🛡️ Zero Cloud Photo Storage: Your screenshots, photos, and videos never leave your device. All media scanning, decay calculations, and deletions occur 100% locally on your phone.</p>
+    </div>
+
+    <h2>1. Introduction</h2>
+    <p>Peere ("we", "our", or "the App") is developed to help users reclaim device storage by staging transient media (such as screenshots, screen recordings, and temporary chat downloads) in a decaying buffer. We are fiercely committed to user privacy. We believe your personal photos and device media are strictly private.</p>
+
+    <h2>2. Complete On-Device Architecture</h2>
+    <p>Unlike traditional cloud cleaners or backup services, Peere operates with a zero-cloud media model:</p>
+    <ul>
+      <li><strong>No Media Uploads:</strong> Your photos, videos, screenshots, and visual metadata are never sent to external servers, cloud databases, or AI training datasets.</li>
+      <li><strong>Local Processing:</strong> All asset indexing, file size calculations, and retention countdowns are executed on-device using official native operating system APIs (Apple Photos Framework and Android MediaStore).</li>
+      <li><strong>System Confirmation for Deletion:</strong> Peere never deletes files silently in the background. Every deletion requires explicit user initiation and confirmation through the native operating system deletion dialog.</li>
+    </ul>
+
+    <h2>3. Permissions We Request and Why</h2>
+    <p>To provide its core functionality, Peere requests the following permissions:</p>
+    <ul>
+      <li><strong>Photo Library Access (iOS: <code>NSPhotoLibraryUsageDescription</code>, <code>NSPhotoLibraryAddUsageDescription</code> / Android: <code>READ_MEDIA_IMAGES</code>, <code>READ_MEDIA_VIDEO</code>, <code>READ_EXTERNAL_STORAGE</code>, <code>WRITE_EXTERNAL_STORAGE</code>):</strong> Required to scan temporary clutter folders (Screenshots, Downloads, Social Chat media), display thumbnail previews in the buffer, and execute user-authorized deletions.</li>
+      <li><strong>Notifications (Android: <code>POST_NOTIFICATIONS</code> / iOS: User Notifications):</strong> Used to schedule periodic local reminder digests (e.g., every 3 days) alerting you when temporary media has reached its expiration threshold. These notifications are scheduled locally on the device.</li>
+    </ul>
+
+    <h2>4. Third-Party Services</h2>
+    <p>We work with a minimal set of trusted infrastructure partners strictly for app operations and purchase processing:</p>
+    <ul>
+      <li><strong>RevenueCat:</strong> We use RevenueCat to validate in-app purchases, manage subscription status, and handle receipt validation with Apple App Store and Google Play Store. RevenueCat processes anonymous app user identifiers and receipt tokens. It never has access to your photo library or personal files.</li>
+      <li><strong>Apple In-App Purchases & Google Play Billing:</strong> All financial transactions, subscriptions, and lifetime unlocks are processed directly by Apple or Google under their respective privacy policies. We do not store or process payment card details.</li>
+      <li><strong>Supabase (Optional Authentication / Support):</strong> If you choose to link an email or redeem promotional ambassador codes, authentication records and anonymous ticket diagnostics are stored in Supabase with strict Row Level Security (RLS).</li>
+    </ul>
+
+    <h2>5. Tracking & Advertising</h2>
+    <ul>
+      <li><strong>Zero Advertising:</strong> Peere contains no third-party advertisements or ad tracking SDKs.</li>
+      <li><strong>No Cross-App Tracking:</strong> We do not track your activity across other apps or websites, and we do not sell your personal information to data brokers.</li>
+    </ul>
+
+    <h2>6. Data Retention & Account Deletion</h2>
+    <p>Your local buffer settings, whitelisted Safe Vault IDs, and reclaimed storage statistics are stored in local device storage (AsyncStorage). You can reset your statistics or delete your account at any time directly inside <strong>Settings &rarr; Delete Account</strong>, in full compliance with Apple App Store Review Guideline 5.1.1(v).</p>
+
+    <h2>7. Children's Privacy</h2>
+    <p>Peere does not knowingly collect or solicit personal information from anyone under the age of 13. If you believe that a child has provided us with personal data, please contact us immediately.</p>
+
+    <h2>8. Changes to this Privacy Policy</h2>
+    <p>We may update our Privacy Policy periodically to reflect app updates or regulatory requirements. Any modifications will be posted to this page with an updated effective date.</p>
+
+    <h2>9. Contact Us</h2>
+    <p>If you have any questions, concerns, or feedback regarding this Privacy Policy or Peere's data practices, please reach out to us:</p>
+    <ul>
+      <li>Email: <a href="mailto:support@peere.io">support@peere.io</a></li>
+      <li>Developer Contact: <a href="mailto:ygtshn61@gmail.com">ygtshn61@gmail.com</a></li>
+      <li>Website: <a href="https://peere.io">https://peere.io</a></li>
+    </ul>
+
+    <div class="footer">
+      <div>&copy; 2026 Peere. All rights reserved.</div>
+      <div><a href="/terms">Terms of Service</a> &middot; <a href="/privacy">Privacy Policy</a></div>
+    </div>
+  </div>
+</body>
+</html>
